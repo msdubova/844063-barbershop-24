@@ -5,14 +5,117 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-    <header>
+    <section class="modal login">
+      <button class="close-btn">
+        <img src="#" alt="Закрыть" width="" height="">
+      </button>
+      <h2>Личный кабинет</h2>
+      <form action="#" method="post" autocomplete novalidate>
+        <label for="login">ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</label>
+        <input type="text" name="user-name" id="login" placeholder="ЛОГИН" autofocus required>
+        <input type="password" name="user-password" id="password" placeholder="ПАРОЛЬ" required>
+        <input type="checkbox"name="remember-me" id="remember" checked>
+        <label for="remember">ЗАПОМНИТЕ МЕНЯ</label>
+        <a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
+        <input type="submit" value="Войти">
+      </form>
+    </section>
 
+    <section class="modal map">
+      <button class="close-btn">
+        <img src="#" alt="Закрыть" width="" height="">
+      </button>
+      <h2 class="hidden">Как нас найти</h2>
+      <p class="map-wrapper">
+        <img src="#" alt="Карта" width="780" height="574">
+      </p>
+    </section>
+
+    <header>
+      <div class="container">
+        <p class="logo-container">
+          <img src="#" alt="Логотип Бородинский" width="371" height="155">
+        </p>
+        <h1 class="hidden">Барбершоп "Бородинский"</h1>
+        <nav class="header-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Войти</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
+      <div class="container">
+        <section class="advantages">
+          <ul>
+            <li>Быстро</li>
+            <li>Круто</li>
+            <li>Дорого</li>
+          </ul>
+        </section>
 
+        <section class="news">
+          <h2>Новости</h2>
+          <b></b>
+          <time></time>
+          <b></b>
+          <time></time>
+          <a class="button" href="#">Все новости</a>
+        </section>
+
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <img src="#" alt="Изображение-1">
+          <button>Назад</button>
+          <button>Вперед</button>
+        </section>
+
+        <section class="contacts">
+          <h2>Контактная информация</h2>
+          <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ,<br>Б. КОНЮШЕННАЯ, Д. 19/8</p>
+          <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 1</p>
+          <a class="button" href="#">Как проехать</a>
+          <a class="button" href="#">Обратная связь</a>
+        </section>
+
+        <section class="reserve">
+          <h2>Записаться</h2>
+          <form action="#" method="get">
+            <label for="date">Дата</label>
+            <input type="date" name="user-date" id="date" required>
+            <label for="time">Время</label>
+            <input type="time" name="user-time" id="time" required>
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" id="name" required>
+            <label for="phone">Телефон</label>
+            <input type="tel" name="tel" id="phone" required>
+            <input type="submit" value="Отправить">
+          </form>
+        </section>
+      </div>
     </main>
-    <footer>
 
+    <footer>
+      <div class="container">
+        <ul class="footer-navigation">
+          <li><p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>КАК НАС НАЙТИ?<br>ТЕЛЕФОН: +7 (495) 666-02-66</p></li>
+          <li>
+            <ul class="social">Давайте дружить!
+              <li><img src="#" alt="ВКонтакте" width="" height=""></li>
+              <li><img src="#" alt="Facebook" width="" height=""></li>
+              <li><img src="#" alt="Instagram" width="" height=""></li>
+            </ul>
+          </li>
+          <li>Разработано:
+            <a class="link" href="https://htmlacademy.ru">HTMLACADEMY</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
