@@ -8,8 +8,8 @@
     <header class="catalog-header">
       <div class="container">
         <nav class="catalog-header-navigation">
-          <a class="catalog-header-logo">
-            <img src="index.html" alt="Логотип Бородинский" width="" height="">
+          <a class="catalog-header-logo" href="index.html">
+            <img src="img/logo-small.svg" alt="Логотип Барбершопа Бородинский" width="111" height="24">
           </a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
@@ -19,7 +19,9 @@
             <li><a href="#">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
-            <li><button>Войти</button></li>
+            <li>
+              <a class="login-link" href="login.html">Войти</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -33,10 +35,10 @@
         <li class="breadcrumbs-current"><a>Средства для ухода</a></li>
       </ul>
       <section class="filters">
-        <h2 class="hidden">Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <section class="producers">
           <h2>Производители</h2>
-          <form class="filter" action="#" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="post">
             <input class="filter-item" type="checkbox" id="baxter-of-california" checked>
             <label for="baxter-of-california">Baxter of California</label>
             <input class="filter-item" type="checkbox" id="mr-natty">
@@ -53,7 +55,7 @@
         </section>
         <section class="product-groups">
           <h2>Группы товаров:</h2>
-          <form class="filter" action="#" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="post">
             <input class="groups-item" type="radio" name="shavers" id="shave-items">
             <label for="shave-items">Бритвенные принадлежности</label>
             <input class="groups-item" type="radio" name="care" id="care-items"  checked>
@@ -62,9 +64,10 @@
             <label for="accessorise-items">Аксессуары</label>
           </form>
         </section>
+        <button class="button">ПОказать</button>
       </section>
       <section class="catalog">
-        <h2 class="hidden">Список средств для ухода</h2>
+        <h2 class="visually-hidden">Список средств для ухода</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
@@ -75,7 +78,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img class="product-thumb" src="#" alt="Набор для путешествий Baxter of California" width="220" height="165">
+                <img class="product-thumb" src="img/catalog-product-1.jpg" alt="Набор для путешествий Baxter of California" width="220" height="165">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -92,7 +95,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="#">
-                <img class="product-thumb" src="#" alt="Увлажняющий кондиционер Baxter of California" width="" height="">
+                <img class="product-thumb" src="img/catalog-product-2.jpg" alt="Увлажняющий кондиционер Baxter of California" width="" height="">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -109,7 +112,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="#">
-                <img class="product-thumb" src="#" alt="Гель для волос Suavecito" width="" height="">
+                <img class="product-thumb" src="img/catalog-product-3.jpg" alt="Гель для волос Suavecito" width="" height="">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -126,7 +129,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="#">
-                <img class="product-thumb" src="#" alt="Глина для укладки волос American Crew" width="" height="">
+                <img class="product-thumb" src="img/catalog-product-4.jpg" alt="Глина для укладки волос American Crew" width="" height="">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -143,7 +146,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="#">
-                <img class="product-thumb" src="#" alt="Гель для волос American Crew" width="" height="">
+                <img class="product-thumb" src="img/catalog-product-5.jpg" alt="Гель для волос American Crew" width="" height="">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -160,7 +163,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="#">
-                <img class="product-thumb" src="#" alt="Набор для бритья Baxter of California" width="" height="">
+                <img class="product-thumb" src="img/catalog-product-6.jpg" alt="Набор для бритья Baxter of California" width="" height="">
               </a>
             </p>
             <p class="catalog-item-price">
@@ -170,10 +173,10 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Переход на страницу">1</a></li>
+          <li class="pagination-item pagination-item-current" aria-label="Переход на страницу"><a>2</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Переход на страницу">3</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Переход на страницу">4</a></li>
         </ul>
       </section>
     </main>
@@ -186,9 +189,9 @@
         <div class="footer-social">
           <b>Давайте дружить!</b>
           <ul class="social">
-            <li><img src="#" alt="ВКонтакте" width="" height="">ВКонтакте</li>
-            <li><img src="#" alt="Facebook" width="" height="">Facebook</li>
-            <li><img src="#" alt="Instagram" width="" height="">Instagram</li>
+            <li><a class="social-item" href="#" aria-label="Группа почитателей Барбершопа Бородинский во ВКонтакте"><img src="img/vk.svg"  width="27" height="15"></a></li>
+            <li><a class="social-item" href="#" aria-label="Сообщество почитателей Барбершопа Бородинский в Facebook"><img src="img/facebook.svg" width="11" height="22"></a></li>
+            <li><a class="social-item" href="#" aria-label="Публичная страничка почитателей Барбершопа Бородинский в Instagram"><img src="img/instagram.svg" width="20" height="20"></a></li>
           </ul>
         </div>
         <p class="footer-copyright">
@@ -198,19 +201,19 @@
       </div>
     </footer>
     <section class="modal login">
-      <button class="close-btn">
-        <img src="#" alt="Закрыть" width="" height="">
-      </button>
-      <h2>Личный кабинет</h2>
-      <form action="#" method="post" autocomplete novalidate>
-        <label for="login">ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</label>
-        <input type="text" name="user-name" id="login" placeholder="ЛОГИН" autofocus required>
-        <input type="password" name="user-password" id="password" placeholder="ПАРОЛЬ" required>
-        <input type="checkbox"name="remember-me" id="remember" checked>
-        <label for="remember">ЗАПОМНИТЕ МЕНЯ</label>
-        <a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
-        <input type="submit" value="Войти">
-      </form>
-    </section>
+        <button class="close-btn">
+          <img src="img/cross.svg" alt="Закрыть" width="19" height="19">
+        </button>
+        <h2>Личный кабинет</h2>
+        <p>ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</p>
+        <form action="https://echo.htmlacademy.ru" method="post" novalidate>
+          <input type="text" name="user-name" id="login" placeholder="ЛОГИН" autofocus required>
+          <input type="password" name="user-password" id="password" placeholder="ПАРОЛЬ" required>
+          <input type="checkbox" name="remember-me" id="remember" checked>
+          <label for="remember">ЗАПОМНИТЕ МЕНЯ</label>
+          <a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
+          <button class="button" type="submit">Войти</button>
+        </form>
+      </section>
   </body>
 </html>
