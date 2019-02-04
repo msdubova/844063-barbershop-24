@@ -4,6 +4,9 @@
       <meta charset="utf-8">
       <html lang="ru">
       <title>HTML Academy: Барбершоп</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="../844063-barbershop-24/css/normalize.css" rel="stylesheet">
+      <link href="../844063-barbershop-24/css/style.css" rel="stylesheet">
     </head>
     <body>
       <header class="main-header">
@@ -47,70 +50,83 @@
               </li>
             </ul>
           </section>
+          <div class="index-columns">
+            <section class="news">
+              <h2>Новости</h2>
+              <ul class="news-list">
+                <li class="news-item">
+                  <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                  <time datetime="2019-01-19">11 января</time>
+                </li>
+                <li class="news-item">
+                  <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДы</p>
+                  <time datetime="2019-01-18">18 января</time>
+                </li>
+              </ul>
+              <a class="button" href="#">Все новости</a>
+            </section>
 
-          <section class="news">
-            <h2>Новости</h2>
-            <ul class="news-list">
-              <li class="news-item">
-                <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                <time datetime="2019-01-19">11 января</time>
-              </li>
-              <li class="news-item">
-                <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДы</p>
-                <time datetime="2019-01-18">18 января</time>
-              </li>
-            </ul>
-            <a class="button" href="#">Все новости</a>
-          </section>
+            <section class="gallery">
+              <h2>Фотогалерея</h2>
+              <figure class="gallery-content">
+                <a href="#">
+                  <img src="img/image.jpg" alt="Интерьер Барбершопа Бородинский" width="286" height="164">
+                </a>
+              </figure>
+              <button class="button gallery-button gallery-button-left" type="button">Назад</button>
+              <button class="button gallery-button gallery-button-right" type="button">Вперед</button>
+            </section>
+          </div>
+          <div class="index-columns">
+            <section class="contacts">
+              <h2>Контактная информация</h2>
+              <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ,<br>
+                Б. КОНЮШЕННАЯ, Д. 19/8</p>
+              <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 1</p>
+              <a class="button" href="#">Как проехать</a>
+              <a class="button" href="#">Обратная связь</a>
+            </section>
 
-          <section class="gallery">
-            <h2>Фотогалерея</h2>
-            <figure class="gallery-content">
-              <a href="#">
-                <img src="img/image.jpg" alt="Интерьер Барбершопа Бородинский" width="286" height="164">
-              </a>
-            </figure>
-            <button class="button gallery-button gallery-button-left" type="button">Назад</button>
-            <button class="button gallery-button gallery-button-right" type="button">Вперед</button>
-          </section>
-
-          <section class="contacts">
-            <h2>Контактная информация</h2>
-            <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-              АДРЕС: Г. САНКТ-ПЕТЕРБУРГ,<br>
-              Б. КОНЮШЕННАЯ, Д. 19/8</p>
-            <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 1</p>
-            <a class="button" href="#">Как проехать</a>
-            <a class="button" href="#">Обратная связь</a>
-          </section>
-
-          <section class="reserve">
-            <h2>Записаться</h2>
-              <p class="reservation-info">Укажите желаемую дату и время, и мы свяжемся с Вами для подтверждения брони</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="date">Дата</label>
-              <input type="date" name="user-date" id="date" required>
-              <label for="time">Время</label>
-              <input type="time" name="user-time" id="time" required>
-              <label for="name">Ваше имя</label>
-              <input type="text" name="name" id="name" required>
-              <label for="phone">Телефон</label>
-              <input type="tel" name="tel" id="phone" required>
-              <button class="button" type="submit">Отправить</button>
-            </form>
-          </section>
+            <section class="appointment">
+              <h2>Записаться</h2>
+                <p class="appointment-info">Укажите желаемую дату и время, и мы свяжемся с Вами для подтверждения брони</p>
+              <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-item">
+                <label for="date">Дата</label>
+                <input type="date" name="user-date" id="date" placeholder="07.10.2019" required>
+                <!-- не работает плейсхолдер и валью -->
+                </p>
+                <p class="appointment-item">
+                <label for="time">Время</label>
+                <input type="time" name="user-time" id="time" value="20:00" required>
+                </p>
+                <p class="appointment-item">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Бородач" required>
+                </p>
+                <p class="appointment-item">
+                <label for="phone">Телефон</label>
+                <input type="tel" name="tel" id="phone" placeholder="+7(931)539-90-20" required>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+              </form>
+            </section>
+          </div>
         </div>
       </main>
 
       <footer class="main-footer">
         <div class="container">
-          <p class="footer-contacts">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+          <p class="footer-contacts">
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
             АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-            КАК НАС НАЙТИ?<br>ТЕЛЕФОН: +7 (495) 666-02-66
+            <a href="map.html">КАК НАС НАЙТИ?</a><br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
           </p>
           <div class="footer-social">
             <b>Давайте дружить!</b>
-            <ul class="social">
+            <ul>
               <li><a class="social-item" href="#" aria-label="Группа почитателей Барбершопа Бородинский во ВКонтакте"><img src="img/vk.svg"  width="27" height="15"></a></li>
               <li><a class="social-item" href="#" aria-label="Сообщество почитателей Барбершопа Бородинский в Facebook"><img src="img/facebook.svg" width="11" height="22"></a></li>
               <li><a class="social-item" href="#" aria-label="Публичная страничка почитателей Барбершопа Бородинский в Instagram"><img src="img/instagram.svg" width="20" height="20"></a></li>
@@ -118,22 +134,22 @@
           </div>
           <p class="footer-copyright">
             <b>Разработано:</b>
-            <a class="link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            <a class="button" href="https://htmlacademy.ru">HTML ACADEMY</a>
           </p>
         </div>
       </footer>
-      <section class="modal login visually-hidden">
+      <section class="modal modal-login visually-hidden">
         <button class="close-btn">
           <img src="img/cross.svg" alt="Закрыть" width="19" height="19">
         </button>
         <h2>Личный кабинет</h2>
         <p>ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</p>
-        <form action="https://echo.htmlacademy.ru" method="post" novalidate>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <input type="text" name="user-name" id="login" placeholder="ЛОГИН" autofocus required>
           <input type="password" name="user-password" id="password" placeholder="ПАРОЛЬ" required>
           <input type="checkbox" name="remember-me" id="remember" checked>
           <label for="remember">ЗАПОМНИТЕ МЕНЯ</label>
-          <a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
+          <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
           <button class="button" type="submit">Войти</button>
         </form>
       </section>

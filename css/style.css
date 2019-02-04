@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700px;
+  color: rgb(247,244,241);
+  text-transform: uppercase;
+
+  background-color: rgb(0,0,0);
+  background-image: url(../img/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  color:rgb(0,0,0);
+
+  background-color: rgb(249,246,243);
+  background-image: url("../img/news-photo.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: rgb(255,255,255);
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: rgb(0,0,0);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: rgb(102,61,21);
+}
+
+.main-header-navigation {
+ font-size: 16px;
+ line-height: 20px;
+ color: rgb(247,244,241);
+
+ background-color: rgb(0,0,0);
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+  color: rgb(247,244,241);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: rgb(36,36,36);
+  outline: none;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+  color: rgb(247,244,241);
+}
+
+.index-columns {
+  color: rgb(0,0,0);
+
+  background-color: rgb(248,245,242);
+  background-image: url(../img/news-photo.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
+
+.gallery-content {
+  background-color: rgb(229,229,229);
+  border: 7px solid rgb(255,255,255);
+}
+
+.appointment-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid rgb(0,0,0);
+}
+
+.appointment-item input:focus {
+  outline: none;
+  border-color: rgb(102,61,21);
+}
+
+.main-footer {
+  color: rgb(247,244,241);
+
+  background-color: rgb(35,35,35);
+  background-image: url(../img/footer-background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts a {
+  color: rgb(247,244,241);
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-item {
+  color: rgb(247,244,241);
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: rgb(0,0,0);
+
+  background-color: rgb(247,244,241);
+}
+
+.modal {
+  color: rgb(0,0,0);
+
+  background-color: rgb(248,245,242);
+  background-image: url(../img/news-photo.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: rgb(0,0,0)
+  text-transform: uppercase;
+
+  background-color: rgb(249,246,243);
+  border: 2px solid rgb(0,0,0);
+}
+
+.login-form input:focus {
+  border-color: rgb(102,61,21);
+}
+
+.login-form input[type="checkbox"]:hover,
+.login-form input[type="checkbox"]:focus {
+color: rgb(102,61,21);
+}
+
+.restore {
+  color: rgb(0,0,0);
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+/* почему нет автофокуса и ховера на социальных кнопках? */
