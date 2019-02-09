@@ -15,13 +15,12 @@ body {
   background-repeat: no-repeat;
 }
 
-.inner-page {
-  color:rgb(0,0,0);
-
-  background-color: rgb(249,246,243);
-  background-image: url("../img/news-photo.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
 }
 
 a {
@@ -184,7 +183,7 @@ a {
 .login-form input[type="text"],
 .login-form input[type="password"] {
   font: inherit;
-  color: rgb(0,0,0)
+  color: rgb(0,0,0);
   text-transform: uppercase;
 
   background-color: rgb(249,246,243);
@@ -210,3 +209,160 @@ color: rgb(102,61,21);
   text-decoration: none;
 }
 /* почему нет автофокуса и ховера на социальных кнопках? */
+
+/* cтраница каталога */
+
+.inner-page {
+  color:rgb(0,0,0);
+
+  background-color: rgb(249,246,243);
+  background-image: url("../img/news-photo.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  font-weight: 700;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a{
+  color: rgb(0,0,0);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+ text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: rgb(171, 169, 167);
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-item:hover + label,
+.filter-item:focus + label {
+  color: rgb(102, 61, 21);
+}
+
+.filter-item:disabled + label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1)
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+  color: rgb(0, 0, 0);
+}
+
+.catalog-item h3 {
+  font-size:  14px;
+  line-height: 18px;
+
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: rgb(229, 229, 229);
+}
+
+.catalog-item-price a {
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color : rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: rgb(102, 61, 21);
+}
+
+.pagination-item-current a {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+/* стили карточки товара */
+.product-photo-preview {
+  list-style: none;
+}
+
+.product-photo-preview li {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-full {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+  text-align: right;
+  color: rgb(174, 174, 174);
+}
+
+.product-price b {
+  line-height: 24px;
+  background-color: rgb(229, 229, 229);
+  text-align: center;
+}
+
+.product-description h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-description ul {
+  list-style: none;
+}

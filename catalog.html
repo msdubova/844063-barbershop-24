@@ -31,7 +31,7 @@
     </header>
 
     <main class="container">
-      <h1>Средства для ухода</h1>
+      <h1 class="catalog-title">Средства для ухода</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
@@ -42,27 +42,49 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Производители</legend>
-            <input class="filter-item" type="checkbox" id="baxter-of-california" checked>
-            <label for="baxter-of-california">Baxter of California</label>
-            <input class="filter-item" type="checkbox" id="mr-natty">
-            <label for="mr-natty">Mr Natty</label>
-            <input class="filter-item" type="checkbox" id="suavecito" checked>
-            <label for="suavecito">Suavecito</label>
-            <input class="filter-item" type="checkbox" id="malin-goetz">
-            <label for="malin-goetz">Malin+Goetz</label>
-            <input class="filter-item" type="checkbox" id="murrays">
-            <label for="murrays">Murray's</label>
-            <input class="filter-item" type="checkbox" id="american-crew" checked>
-            <label for="american-crew">American Crew</label>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-item" type="checkbox" id="baxter-of-california" checked>
+                <label for="baxter-of-california">Baxter of California</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="checkbox" id="mr-natty">
+                <label for="mr-natty">Mr Natty</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="checkbox" id="suavecito" checked>
+                <label for="suavecito">Suavecito</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="checkbox" id="malin-goetz">
+                <label for="malin-goetz">Malin+Goetz</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="checkbox" id="murrays">
+                <label for="murrays">Murray's</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="checkbox" id="american-crew" checked>
+                <label for="american-crew">American Crew</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Группы товаров:</legend>
-            <input class="groups-item" type="radio" name="shavers" id="shave-items">
-            <label for="shave-items">Бритвенные принадлежности</label>
-            <input class="groups-item" type="radio" name="care" id="care-items"  checked>
-            <label for="care-items">Средства для ухода</label>
-            <input class="groups-item" type="radio" name="accessorise" id="accessorise-items">
-            <label for="accessorise-items">Аксессуары</label>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-item" type="radio" name="groups" id="shave-items">
+                <label for="shave-items">Бритвенные принадлежности</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="radio" name="groups" id="care-items"  checked>
+                <label for="care-items">Средства для ухода</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-item" type="radio" name="groups" id="accessorise-items">
+                <label for="accessorise-items">Аксессуары</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="button">Показать</button>
         </form>
