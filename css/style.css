@@ -593,3 +593,17 @@ main .container {
   margin-top: 45px;
 
 }
+
+.inner-page .product-photos {
+  width: 460px;
+
+  /* temporary */
+  min-height: 480px;
+}
+
+.inner-page .product-description {
+  width: 390px;
+
+  /* temporary */
+  min-height: 480px;
+}
