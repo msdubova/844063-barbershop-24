@@ -366,3 +366,123 @@ color: rgb(102,61,21);
 .product-description ul {
   list-style: none;
 }
+
+/* разметка сетки */
+
+
+/* временно для сетки
+  body {
+  background-image: url(../../../../barbershop/barbershop-preview/barbershop-index.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+} */
+.main-header-navigation {
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ background-color: transparent;
+}
+
+.main-header-logo {
+  display: block;
+  width: 371px;
+  height: 155px;
+  order: 2;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 620px;
+  display: flex;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 140px;
+  min-height: 72px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: black;
+}
+
+.main-navigation-wrapper .container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main .container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 80px;
+}
+.feature-item {
+  width: 300px;
+}
+
+.index-columns{
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+}
+.news {
+  width: 380px;
+}
+
+.gallery {
+  width: 300px;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment{
+  width: 300px;
+}
+.index-columns h2 {
+  margin-top: 0;
+}
+
+.main-footer {
+  margin-top: 65px;
+}
+
+.main-footer .container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.footer-social ul{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding: 0;
+}
+.footer-contacts {
+  margin-right: 80px;
+}
+.footer-copyright {
+  margin-left: auto;
+}
