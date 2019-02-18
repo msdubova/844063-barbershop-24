@@ -15,19 +15,40 @@ body {
   background-repeat: no-repeat;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   height: 1px;
   width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
+  clip: rect(0px 0px 0px 0px);
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 }
 
 a {
   text-decoration: none;
 }
 
+/* стархует от переполнения родителя */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .button {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 16px;
   font: inherit;
 
   text-align: center;
@@ -44,7 +65,9 @@ a {
 .button:active {
   background-color: rgb(102,61,21);
 }
-
+.button:disabled {
+  opacity: 0.3;
+}
 .main-header-navigation {
  font-size: 16px;
  line-height: 20px;
@@ -58,9 +81,20 @@ a {
   list-style: none;
 }
 
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+}
+
+.user-navigation {
+  max-width: 140px;
+}
 .site-navigation a,
 .user-navigation a{
+  display: block;
   color: rgb(247,244,241);
+  padding: 25px 20px;
 }
 
 .site-navigation a:hover,
@@ -77,21 +111,42 @@ a {
 
 .feature-item {
   text-align: center;
+  font-weight: bold;
 }
 
 .feature-item h3 {
+  margin: 0;
+  margin-bottom: 60px;
   font-size: 30px;
   line-height: 42px;
   color: rgb(247,244,241);
+  position: relative;
 }
 
+.feature-item h3::after {
+position: absolute;
+content: "";
+bottom: -30px;
+left: 50%;
+width: 20px;
+height: 20px;
+margin-left: -10px;
+transform: rotate(45deg);
+background-color: rgb(255, 255, 255);
+}
+
+.feature-item p {
+  margin: 0 10px;
+}
 .index-columns {
+  font-weight: bold;
   color: rgb(0,0,0);
 
   background-color: rgb(248,245,242);
-  background-image: url(../img/news-photo.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background-image: url(../img/line.png),
+                    url(../img/news-photo.jpg);
+  background-position: center, 0 0;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .index-columns h2 {
@@ -101,8 +156,17 @@ a {
 
 .news-list {
   list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 
+}
+.news-list p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+}
 .news-item time {
   text-transform: none;
 }
@@ -110,8 +174,33 @@ a {
 .gallery-content {
   background-color: rgb(229,229,229);
   border: 7px solid rgb(255,255,255);
+  height: 164px;
+  margin: 0;
 }
 
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+.gallery-button {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+.gallery-button-back {
+
+left: 0;
+}
+.gallery-button-right{
+  right: 0;
+}
+.gallery-container {
+  position: relative;
+  height: 260px;
+
+}
 .appointment-item input {
   font: inherit;
 
@@ -124,6 +213,19 @@ a {
   border-color: rgb(102,61,21);
 }
 
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+.appointment-item {
+  width: 140px;
+}
+.appointment-item input {
+  width: 100%;
+}
 .main-footer {
   color: rgb(247,244,241);
 
@@ -167,6 +269,7 @@ a {
 }
 
 .modal {
+  display: none;
   color: rgb(0,0,0);
 
   background-color: rgb(248,245,242);
@@ -403,8 +506,36 @@ color: rgb(102,61,21);
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 140px;
-  min-height: 72px;
+
+
+  min-height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 140px;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 50px;
+
+
+}
+
+.user-navigation .login-link::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-image: url("../img/login.svg");
+  top: 26px;
+  left: 27px;
+  opacity: 0.3;
+}
+
+.user-navigation .login-link:hover::before
+.user-navigation .login-link:focus::before {
+  opacity: 1;
 }
 
 .main-navigation-wrapper {
@@ -442,7 +573,11 @@ main .container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+}
 
+.index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
 }
 .news {
   width: 380px;
