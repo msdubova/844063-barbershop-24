@@ -569,6 +569,38 @@ footer .container
     background-color: rgb(247,244,241);
 }
 
+
+@keyframes bounce {
+0%, 100% {
+  transform: scale(1) translate(-50%, -50%);
+}
+
+50% {
+  transform: scale(1.5) translate(-50%, -50%);
+}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-40%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-60%, -50%);
+  }
+}
 .modal {
 
     color: rgb(0,0,0);
@@ -581,12 +613,14 @@ footer .container
 {   background-repeat: repeat;
     background-position: 0 0;
     background-image: url(../img/news-photo.jpg);
-    top: 120px;
-    left: 50%;
-    margin-left: -230px;
     width: 460px;
     padding: 50px 80px;
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .modal button {
@@ -728,13 +762,14 @@ footer .container
 .modal.map {
   width: 766px;
   height: 563px;
-  left: 50%;
+  display: none;
+  position: fixed;
   top: 50%;
-  position: absolute;
-  margin-left:-383px;
-  z-index: 4;
-
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
 }
+
 .map p {
   margin:0;
   padding: 0;
@@ -743,6 +778,17 @@ footer .container
 .map img {
   border: 7px solid rgb(255, 255, 255);
 }
+
+
+.modal-show {
+  display: block !important;
+  animation: bounce 2s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 /* почему нет автофокуса и ховера на социальных кнопках? */
 
 /* cтраница каталога */

@@ -88,8 +88,8 @@
                 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ,<br>
                 Б. КОНЮШЕННАЯ, Д. 19/8</p>
               <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 1</p>
-              <a class="button" href="#">Как проехать</a>
-              <a class="button" href="#">Обратная связь</a>
+              <a class="button mapping" href="#">Как проехать</a>
+              <a class="button mail" href="#">Обратная связь</a>
             </section>
 
             <section class="appointment">
@@ -167,8 +167,8 @@
         <h2>Личный кабинет</h2>
         <p class="modal-description">ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="user-name" id="login" placeholder="ЛОГИН" autofocus required>
-          <input type="password" name="user-password" id="password" placeholder="ПАРОЛЬ" required>
+          <input type="text" name="user-name" id="login" placeholder="ЛОГИН">
+          <input type="password" name="user-password" id="password" placeholder="ПАРОЛЬ">
           <input type="checkbox" name="remember-me" id="remember" checked>
           <label for="remember">ЗАПОМНИТЕ МЕНЯ</label>
           <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
@@ -178,12 +178,14 @@
 
       <section class="modal map">
         <button class="close-btn">
-
+          Закрыть
         </button>
         <h2 class="visually-hidden">Как нас найти</h2>
         <p class="map-wrapper">
-          <img src="img/map mask.png" alt="Офис компании по адресу улица Большая Конюшенная  19\8 Санкт-Петербург" width="766" height="560">
+          <!-- <img src="img/map mask.png" alt="Офис компании по адресу улица Большая Конюшенная  19\8 Санкт-Петербург" width="766" height="560"> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551788476336" width="766" height="560"  style="border:0" allowfullscreen></iframe>
         </p>
       </section>
+      <script src="js/script.js"></script>
     </body>
   </html>
